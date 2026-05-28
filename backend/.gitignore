@@ -1,0 +1,24 @@
+venv/
+.env
+__pycache__/
+*.pyc
+
+
+# JSON files
+*.json
+
+# Images
+*.png
+*.jpg
+*.jpeg
+*.gif
+img/
+
+# Node
+node_modules/
+
+# Secrets
+secret/
+keys/
+
+README.md
