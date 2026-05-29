@@ -1,0 +1,57 @@
+railway agent
+
+Not Found The train has not arrived at the station.
+
+Please check your network settings to confirm that your domain has provisioned.
+
+If you are a visitor, please let the owner know you're stuck at the station.
+
+Request ID: opXhWIMzQvy3fDsFVOLIQQ
+
+I see you're getting a "Not Found" error with a Railway domain. This typically means the service hasn't deployed yet or the domain isn't fully provisioned.
+
+Let me check your project's current status:
+
+Checked environment status
+
+Hide result
+1 of 1 service with issues
+•
+4 recent failures
+ai-support-agent-ogr
+Online
+Your service ai-support-agent-ogr is currently online with a successful deployment, but it has 4 recent failures. Let me check what went wrong with those failed deployments:
+
+Diagnosed deployment × 2
+Fetched service config
+Good news: your service is now online and working. The earlier failures were due to a misconfigured root directory (it had the label text included), but that's been fixed and your latest deployment succeeded.
+
+Your service is deployed at: ai-support-agent-ogr-production.up.railway.app
+
+If you're still seeing the "Not Found" error when visiting that domain, it could be:
+
+DNS propagation delay — the domain was just provisioned. Wait a few minutes and try again.
+Service not responding on port 8080 — check that your app is actually listening on port 8080 (which is configured in your service).
+Application error — the service is running but returning a 404. Check your deployment logs:
+Searched deploy logs
+
+Hide result
+06:36:49
+Starting Container
+06:36:49
+INFO: Started server process [1]
+06:36:49
+INFO: Waiting for application startup.
+06:36:49
+INFO: Application startup complete.
+06:36:49
+INFO: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+Your app is running fine on port 8080. The "Not Found" error you're seeing is likely a DNS propagation issue or the domain just needs a moment to fully activate.
+
+Try these steps:
+
+Wait 2–3 minutes and refresh your browser
+Clear your browser cache (Ctrl+Shift+Delete or Cmd+Shift+Delete)
+Try accessing it from an incognito/private window
+If still stuck, try accessing the IP directly via Railway's dashboard or check if there's a temporary URL available
+If the issue persists after 5 minutes, let me know and we can investigate further.
