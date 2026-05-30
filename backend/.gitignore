@@ -1,24 +1,37 @@
+# Virtual environment
 venv/
+
+# Environment variables
 .env
+
+# Python cache
 __pycache__/
 *.pyc
-
-
-# JSON files
-*.json
 
 # Images
 *.png
 *.jpg
 *.jpeg
 *.gif
-img/
+*.webp
+
+# Text files
+*.txt
+
+# Hide README files
+README.md
+
+# Logs
+*.log
 
 # Node
 node_modules/
+
+# VS Code
+.vscode/
 
 # Secrets
 secret/
 keys/
 
-README.md
+
